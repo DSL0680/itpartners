@@ -1,0 +1,102 @@
+    th,
+    td {
+        white-space: nowrap;
+    }
+
+    .highlight {
+        color: rgb(204, 52, 52);
+        /* 글자색을 빨간색으로 변경 */
+        font-weight: bold;
+        /* 글자를 굵게 변경 */
+    }
+
+
+    .ppp {
+        font-weight: bold;
+        color: rgb(78, 78, 189);
+        font-size: 10;
+    }
+
+    h1 {
+        margin-left: 7%;
+    }
+
+    /* Body에 대한 기본 스타일 */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    /* 전체적인 컨테이너 스타일 */
+    .container {
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+
+    }
+
+    /* 헤더 스타일 */
+    h2 {
+        color: #333;
+    }
+
+    /* 버튼 스타일 */
+    .btn {
+        border-radius: 3px;
+    }
+
+    /* 주요 컨테이너의 배경색과 글자색 */
+    .bg-primary {
+        background-color: #007bff !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+
+    /* 카드 스타일 */
+    .card {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 테이블 스타일 */
+    .table {
+        background-color: #fff;
+    }
+
+    /* 하이라이트 스타일 */
+    .highlight {
+        font-weight: bold;
+    }
+
+    /* 단락 스타일 */
+    .pp {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* 더 깊은 단락 스타일 */
+    .ppp {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-style: italic;
+        color: #888;
+    }
+
+    /* 정렬 버튼 스타일 */
+    #sortButton {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    #sortButton:hover {
+        color: #007bff;
+    }
+
