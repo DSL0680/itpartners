@@ -27,6 +27,7 @@ html {
     box-sizing: border-box;
     z-index: 1000;
     transition: all 0.3s ease;
+
 }
 
 .btn_sns {
@@ -121,6 +122,23 @@ height: 100vh; /* 화면의 100% 높이로 설정 */
 }
 
 
+/* 링크에 밑줄 및 색상 변경 */
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #f0f0f0; /* 링크 색상을 주황색으로 변경 */
+    font-size: 0.7em; /* 12픽셀 크기로 작은 텍스트 설정 */
+  
+}
+
+/* 링크에 호버 효과 추가 */
+a:hover {
+    color: #c5da4b; /* 호버 시 링크 색상을 빨간색으로 변경 */
+}
+
+/* 링크에 클릭 효과 추가 */
+a:active {
+    color: #00ff00; /* 클릭 시 링크 색상을 녹색으로 변경 */
+}
 
 @media (max-width: 368px) {
     img.dp {
