@@ -1,4 +1,3 @@
-
 body,
 html {
     margin: 0;
@@ -30,19 +29,20 @@ html {
 
 }
 
-.btn_sns {
+.menu {
     float: right;
     list-style: none;
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
+    font-size: 30px;
 }
 
-.btn_sns li {
+.menu li {
     display: inline-block;
     margin-left: 10px;
 }
 
-.btn_sns img {
+.menu img {
     width: 30px;
 }
 
@@ -65,9 +65,10 @@ footer p {
     margin: 0;
 }
 
-h1 .logo {
+.logo {
     float: left;
     position: relative;
+    margin-top: 2%;
 }
 
 header .inner {
@@ -117,62 +118,102 @@ header .inner {
     height: 20px;
     background: #2a2a2a;
 }
+
 #fullpage {
-height: 100vh; /* 화면의 100% 높이로 설정 */
+    height: 100vh;
+    /* 화면의 100% 높이로 설정 */
 }
 
 
 /* 링크에 밑줄 및 색상 변경 */
 a {
-    text-decoration: none; /* 밑줄 제거 */
-    color: #f0f0f0; /* 링크 색상을 주황색으로 변경 */
-    font-size: 0.7em; /* 12픽셀 크기로 작은 텍스트 설정 */
-  
+    text-decoration: none;
+    /* 밑줄 제거 */
+    color: #f0f0f0;
+    /* 링크 색상을 주황색으로 변경 */
+    font-size: 0.7em;
+    /* 12픽셀 크기로 작은 텍스트 설정 */
+
 }
 
 /* 링크에 호버 효과 추가 */
 a:hover {
-    color: #c5da4b; /* 호버 시 링크 색상을 빨간색으로 변경 */
+    color: #c5da4b;
+    /* 호버 시 링크 색상을 빨간색으로 변경 */
 }
 
 /* 링크에 클릭 효과 추가 */
 a:active {
-    color: #00ff00; /* 클릭 시 링크 색상을 녹색으로 변경 */
+    color: #00ff00;
+    /* 클릭 시 링크 색상을 녹색으로 변경 */
 }
 
-@media (max-width: 368px) {
-    img.dp {
-        height: auto;
-        width: auto;
-    }
+.menu-toggle {
+    display: none;
+    /* 기본적으로 숨겨진 아이콘 */
+    position: absolute;
+    top: 35px;
+    /* 위쪽 여백 */
+    right: 30px;
+    /* 오른쪽 여백 */
+}
 
-    #header {
-        padding: 10px 20px 20px;
-        /* 예시로 padding 값을 조절함 */
-    }
 
-    .btn_sns {
-        float: none;
-        text-align: center;
-        margin-top: 10px;
-        /* 예시로 여백을 조절함 */
-    }
+#menu-icon {
+    font-size: 24px;
+    /* 아이콘 크기 */
+    color: #ffffff;
+    /* 아이콘 색상 */
+    cursor: pointer;
+    /* 클릭 가능한 커서로 설정 */
+}
 
-    .btn_sns li {
+#menu-icon:hover {
+    color: #56585C;
+}
+
+
+
+/* 토글 아이콘 미디어 쿼리*/
+@media screen and (max-width: 1024px) {
+
+    .menu-toggle {
         display: block;
-        margin-left: 0;
-        margin-bottom: 10px;
-        /* 예시로 여백을 조절함 */
+        /* 작은 화면 크기에서 보이도록 함 */
     }
 
-    .btn_sns img {
-        width: 40px;
-        /* 예시로 이미지 크기를 조절함 */
+    .sub-menu {
+        display: none;
+        /* 기본적으로 숨겨진 메뉴 */
+        position: absolute;
+        /* 절대 위치로 설정 */
+        top: 80%;
+        /* 헤더 아래에 나타나도록 함 */
+        left: 0;
+
     }
 
-    #fp-nav {
-        margin-top: -22px;
-        /* 예시로 네비게이션 위치를 조절함 */
+    .sub-menu.active {
+        display: flex;
+        /* 메뉴를 보이도록 함 */
+        justify-content: center;
+        /* 가로 방향 중앙 정렬 */
+        background-color: #d37e5a;
+        width: 100%;
     }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: flex;
+        padding: 10px;
+        /* 각 메뉴 항목의 여백 설정 */
+        text-align: center;
+        /* 가운데 정렬 */
+    }
+
+
 
 }

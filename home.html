@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="js/home.js"></script>
 </head>
 
@@ -19,36 +20,39 @@
         <!-- Header -->
         <header id="header">
             <div class="inner">
-                <h1 class="logo">
-                    <a href="/">
-                        <img class="dp" src="https://www.잇샵.com/modules/user/img/common/logo_w.png" alt="잇샵">
-                    </a>
-
-                    <ul class="btn_sns">
+                <div class="menu-toggle">
+                    <i id="menu-icon" class="fas fa-bars"></i>
+                </div>
+                <a class="logo" href="/">
+                    <img class="dp" src="https://www.잇샵.com/modules/user/img/common/logo_w.png" alt="잇샵 로고">
+                </a>
+                <nav class="sub-menu">
+                    <ul class="menu">
                         <li>
-                            <a href="sign.html">
-                                회원가입                                
+                            <a href="/sign.html">
+                                회원가입
                             </a>
                         </li>
                         <li>
-                            <a href="cs.html">
+                            <a href="/cs.html">
                                 상담신청
                             </a>
                         </li>
                         <li>
-                            <a href="mypage.html">
+                            <a href="/mypage.html">
                                 마이페이지
                             </a>
                         </li>
                         <li>
-                            <a href="stafftable.html">
+                            <a href="/stafftable.html">
                                 관리자
                             </a>
                         </li>
                     </ul>
-                </h1>
+                </nav>
             </div>
         </header>
+        
         <!-- //Header -->
 
         <div id="fullpage">

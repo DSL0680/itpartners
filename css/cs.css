@@ -1,74 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
+.content {
+    padding-top: 80px;
+    margin-top: auto;
+    /* 헤더 높이만큼 공간을 띄웁니다. */
+}
+
+.container {
+    background-color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    text-align: center;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* 링크에 밑줄 및 색상 변경 */
+a {
+    text-decoration: none;
+    /* 밑줄 제거 */
+    color: #000000;
+    /* 링크 색상을 주황색으로 변경 */
+    font-size: 0.7em;
+    /* 12픽셀 크기로 작은 텍스트 설정 */
+
+}
+
+/* 링크에 호버 효과 추가 */
+a:hover {
+    color: #c5da4b;
+    /* 호버 시 링크 색상을 빨간색으로 변경 */
+}
+
+/* 링크에 클릭 효과 추가 */
+a:active {
+    color: #00ff00;
+    /* 클릭 시 링크 색상을 녹색으로 변경 */
+}
+
+.logo {
+    float: left;
+    position: relative;
+    margin-top: 2.5%;
+}
+
+.menu {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 30px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+header .inner {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.menu-toggle {
+    display: none;
+    /* 기본적으로 숨겨진 아이콘 */
+    position: absolute;
+    top: 35px;
+    /* 위쪽 여백 */
+    right: 30px;
+    /* 오른쪽 여백 */
+}
+
+header {
+    background-color: #67c967;
+}
+
+#menu-icon {
+    font-size: 24px;
+    /* 아이콘 크기 */
+    color: #ffffff;
+    /* 아이콘 색상 */
+    cursor: pointer;
+    /* 클릭 가능한 커서로 설정 */
+}
+
+#menu-icon:hover {
+    color: #56585C;
+}
+.dp {
+    background-color: #696969;
+}
+
+
+
+/* 토글 아이콘 미디어 쿼리*/
+@media screen and (max-width: 1024px) {
+
+    .menu-toggle {
+        display: block;
+        /* 작은 화면 크기에서 보이도록 함 */
     }
 
-    .content {
-        padding-top: 80px;
-        /* 헤더 높이만큼 공간을 띄웁니다. */
+    .sub-menu {
+        display: none;
+        /* 기본적으로 숨겨진 메뉴 */
+        position: absolute;
+        /* 절대 위치로 설정 */
+        top: 11%;
+        /* 헤더 아래에 나타나도록 함 */
+        left: 0;
+
     }
 
-    .container {
-        background-color: #fff;
-        padding: 14px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-        width: 80%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    form {
+    .sub-menu.active {
         display: flex;
+        /* 메뉴를 보이도록 함 */
+        justify-content: center;
+        /* 가로 방향 중앙 정렬 */
+        background-color: #d37e5a;
+        width: 100%;
+    }
+
+    .menu {
         flex-direction: column;
-        padding: 20px;
     }
 
-    label {
-        margin-bottom: 8px;
-    }
-
-    input,
-    select {
+    .menu li {
+        display: flex;
         padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-
-    button {
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 9px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-top: 10px;
-    }
-
-    button:hover {
-        background-color: #45a049;
-    }
-
-    h1 {
+        /* 각 메뉴 항목의 여백 설정 */
         text-align: center;
-        background-color: #fff;
-        padding: 8px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-        width: 80%;
-        max-width: 400px;
-        margin: 0 auto;
+        /* 가운데 정렬 */
     }
 
-    h2 {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+
+}
 
