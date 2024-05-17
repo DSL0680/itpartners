@@ -1,4 +1,12 @@
+// 토글 메뉴
+document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.getElementById('menu-icon');
+    var subMenu = document.querySelector('.sub-menu');
 
+    menuIcon.addEventListener('click', function () {
+        subMenu.classList.toggle('active'); // 메뉴를 토글
+    });
+});
 
 
 
