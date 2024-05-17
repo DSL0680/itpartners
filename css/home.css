@@ -68,7 +68,7 @@ footer p {
 .logo {
     float: left;
     position: relative;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 header .inner {
@@ -198,7 +198,7 @@ a:active {
         /* 메뉴를 보이도록 함 */
         justify-content: center;
         /* 가로 방향 중앙 정렬 */
-        background-color: #d37e5a;
+        background-color: #ffffff39;
         width: 100%;
     }
 
@@ -216,4 +216,12 @@ a:active {
 
 
 
+
+}
+
+@media screen and (max-width: 376px) {
+    .logo {
+        margin-top: 8%;
+    }
+    
 }
