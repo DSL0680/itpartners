@@ -14,18 +14,3 @@ O2O(Online to Offline) 플랫폼을 사업자들에게 알리기 위한 웹 페�
 
 3. **관리자 페이지 기능**:
 - 사업자들의 등록 신청 승인/거절, 사용자 정보 관리, 콘텐츠 관리, 통계 및 분석 기능 포함
-
-## Firebase 설정
-
-** firebaseConfig는 보안상 아래처럼 수정되어 있습니다. **
-
-```javascript
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID",
-    measurementId: "YOUR_MEASUREMENT_ID"
-};
